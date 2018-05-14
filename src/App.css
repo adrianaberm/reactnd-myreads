@@ -8,6 +8,8 @@ body, .app {
   background: white;
 }
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
 /* main page */
 
 .list-books-title {
@@ -115,22 +117,61 @@ body, .app {
   flex-wrap: wrap;
 }
 .books-grid li {
-  padding: 10px 15px;
-  text-align: left;
+ 
+  border: 1px solid #efefef;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
 }
 
 .book {
   width: 140px;
+  text-align: center;
+  
 }
-.book-title,
-.book-authors {
+
+.book-authors, 
+.book-publisher {
   font-size: 0.8em;
 }
 .book-title {
-  margin-top: 10px;
+   font-size: 0.9em;
+  font-weight: bold;
+  margin-top: 15px;
 }
 .book-authors {
   color: #999;
+}
+
+.book-publisher{
+  color: #60ac5d;
+  font-style: italic;
+  line-height: 1.2em;
+  margin-top: 10px;
+}
+
+.book-review{
+  background: #f6f6f6;
+  color: #666;
+  font-size: 0.8em;
+  margin-top: 10px;
+  padding: 5px;
+ 
+}
+
+.book-review span{
+  display: block;
+
+}
+
+.book-review span:before{
+  content:'\f005';
+  color: #f7a408;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .book-top {

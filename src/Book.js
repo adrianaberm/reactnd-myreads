@@ -41,7 +41,7 @@ class Book extends Component {
           {book.authors && book.authors.length > 0 && book.authors[0]}
         </div>
         <div className="book-publisher">Publisher: { bookPublisher } </div>
-        <div className="book-review">Book Average Rating: { bookRating }</div>
+        <div className="book-review">Book Average Rating: <span>{ bookRating }</span></div>
             </div>
           </li>
     )
