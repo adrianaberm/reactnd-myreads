@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Book from './Book'
 
-class BookShelf extends Component {
+class Shelf extends Component {
 
   render() {
     const { books, onUptadeShelf } = this.props
@@ -18,7 +18,6 @@ class BookShelf extends Component {
       </ol>
     )
   }
-
 }
 
-export default BookShelf
+export default Shelf

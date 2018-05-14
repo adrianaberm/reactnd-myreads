@@ -4,10 +4,10 @@ import Shelf from './Shelf'
 class BookShelf extends Component {
 
   render() {
-    const { books, onUptadeShelf } = this.props
+    const {books, onUptadeShelf } = this.props
     const shelves = [{ id: 'currentlyReading', title: 'Currently Reading' },
-                        { id: 'wantToRead',  title: 'Want to Read' },
-                        { id: 'read', title: 'Read'}]
+                     { id: 'wantToRead',  title: 'Want to Read' },
+                     { id: 'read', title: 'Read'}]
 
     return (
       <div className="list-books-content">

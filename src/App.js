@@ -17,7 +17,8 @@ class BooksApp extends React.Component {
     .then((books) => this.setState({books}))
   }
 
-onUptadeShelf = ( book, shelf ) => {
+
+  onUptadeShelf = ( book, shelf ) => {
    
     BooksAPI.update(book,shelf).then(() => {
         book.shelf = shelf;
@@ -50,7 +51,7 @@ onUptadeShelf = ( book, shelf ) => {
                     onUptadeShelf = {this.onUptadeShelf}
                    />
                  
-                </div>
+              </div>
             </div>
             <div className="open-search">
               <Link
@@ -63,21 +64,16 @@ onUptadeShelf = ( book, shelf ) => {
 
         )}/>
 
-        <Route path='/search' 
-        render={({ history}) => (
+        <Route path='/search' render={({ history}) => (
 
                <Search
                   books={ books}
                   onUptadeShelf = { this.onUptadeShelf}
                />
           )
-   
-      }
-
+        }
         />
-       
-         
-        
+      
       </div>
     )
   }
